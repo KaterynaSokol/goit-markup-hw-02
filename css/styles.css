@@ -43,6 +43,9 @@ color: var(--dark)
 .web{
     color: var(--primarybrand);
 }
+.webstudio, .web-studio{
+text-transform: uppercase;
+}
 
 .menu{}
 
@@ -50,12 +53,13 @@ color: var(--dark)
 font-weight: 600;
 font-size: 16px;
 line-height: 1.5;
+color: var(--dark);
 }
-.menu-item .link:hover, 
-.menu-item .link:focus{
+.menu-item:hover, 
+.menu-item:focus{
     color: var(--text);
 }
-.menu-item .link:active{
+.menu-item:active{
     color: var(--primarybrand);
 }
 .contacts{}
@@ -66,10 +70,15 @@ font-size: 16px;
 line-height: 1.5;
 color: var(--text);
 }
-.contact .link:hover,
-.contact .link:focus{
+.contact:hover,
+.contact:focus{
 color: var(--primarybrand);
 }
+
+.paragraph{
+    color: var(--text);
+}
+
 
 
 /* Primary Section - Effective Solutions for Your Business */
@@ -85,6 +94,9 @@ line-height: 1.07;
 color: var(--primary-white);
 text-align: center;
 }
+.hidden-title{
+    visibility: hidden;
+}
 
 .secondary-title{
 font-weight: 600;
@@ -93,19 +105,37 @@ line-height: 1.1;
 }
 
 .primary-btn{
+font-family: Roboto, sans-serif;
+font-style: normal;
 font-weight: 600;
 font-size: 16px;
 line-height: 1.17;
 color: var(--primary-white);
 background-color: var(--primarybrand);
 text-align: center;
+cursor: pointer;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
 
+}
+
+.primary-btn:hover,
+.primary-btn:focus{
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+border-radius: 4px;
+}
+
+.primary-btn:active{
+background: #404BBF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
 }
 
 .section-title{
 font-weight: 600;
 font-size: 20px;
 line-height: 1.2;
+
 }
 
 .work-section{}
@@ -114,7 +144,14 @@ line-height: 1.2;
 .team-section{
     background-color: var(--light);
 }
-
+.team-item{
+    background-color: var(--primary-white);
+}
+.teammate{
+font-weight: 600;
+font-size: 20px;
+line-height: 1.2;
+}
 
 /* Footer */
 
@@ -131,5 +168,19 @@ color: var(--accent);
 /* PORTFOLIO PAGE */
 
 .button{
-    cursor: pointer;
+background-color: var(--light);
+color: var(--primarybrand);
+border: 1px solid #E7E9FC;
+border-radius: 4px;
+cursor: pointer;
+font-family: Roboto, sans-serif;
+font-style: normal;
+
 }
+
+.button:hover,
+.button:focus{
+background-color: var(--primarybrand);
+color: var(--primary-white);
+}
+
